@@ -16,7 +16,8 @@ app.controller('FirstController',function($scope,$http){
             userId: 1
         })
             .success(function(data,status,headers,config){
-                $scope.posts.push($scope.newPost):
+                console.log(data);
+                $scope.posts.push($scope.newPost);
                 $scope.addPost = {};
             })
             .error(function(error,status,headers,config){
